@@ -15,9 +15,7 @@ public class Question2 {
 
 		//Q2
 		int age = 25;
-		if (age >= 20) {
-			System.out.println("適正年齢です");
-		} else if (age <= 30) {
+		if (age >= 20 || age <= 30) {
 			System.out.println("適正年齢です");
 		} else {
 			System.out.println("対象外です");
@@ -61,8 +59,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q6
-		Scanner sc1 = new Scanner(System.in);
-		int value = sc1.nextInt();
+		int value = sc.nextInt();
 		if (value % 2 == 0) {
 			System.out.println("偶数です");
 		} else {
@@ -71,8 +68,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q7
-		Scanner sc2 = new Scanner(System.in);
-		int score1 = sc2.nextInt();
+		int score1 = sc.nextInt();
 		if (score1 >= 90) {
 			System.out.println("優");
 		} else if (score1 >= 70) {
@@ -85,16 +81,14 @@ public class Question2 {
 		System.out.println();
 		
 		//Q8
-		Scanner sc3 = new Scanner(System.in);
-		String input = sc3.nextLine();
+		String input = sc.nextLine();
 		if (input == null || input.equals("")) {
 			System.out.println("「入力が無効です」");
 		}
 		System.out.println();
 		
 		//Q9
-		Scanner sc4 = new Scanner(System.in);
-		int day = sc4.nextInt();
+		int day = sc.nextInt();
 		switch (day) {
 		case 1:
 			System.out.println("月曜日");
@@ -123,8 +117,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q10
-		Scanner sc5 = new Scanner(System.in);
-		int month = sc5.nextInt();
+		int month = sc.nextInt();
 		switch (month) {
 		case 12: case 1: case 2:
 			System.out.println("冬");
