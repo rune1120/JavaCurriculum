@@ -1,5 +1,6 @@
 package curriculum.b;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Question3 {
@@ -93,6 +94,48 @@ public class Question3 {
 	    	System.out.print(String.format("%02d*%02d=%02d||", o, p, multiplication));
 		}
 	    	System.out.println();
+	    }
+	    
+	    //Q12
+	    Scanner scanner = new Scanner(System.in);
+	    String appliance = scanner.next();	
+	    String[] parts = appliance.split("、"); //「、」区切り
+	    Random random = new Random(); //ランダム関数
+	    int number = random.nextInt(11); //11までランダムで出力
+	    int number1 = random.nextInt(11);
+	    int number2 = random.nextInt(11);
+	    int number3 = random.nextInt(11);
+	    int number4 = random.nextInt(11);
+	    int number5 = random.nextInt(11);
+	    int tv = number5;
+	    int display = 11 - tv;
+	    for (String item : parts) { 
+	    switch (item) {
+	    case "パソコン":
+	    	System.out.println("パソコンの残り台数は"+ number +"台です");
+	    	break;
+	    case "冷蔵庫":
+	    	System.out.println("冷蔵庫の残り台数は"+ number1 +"台です");
+	    	break;
+	    case "扇風機":
+	    	System.out.println("扇風機の残り台数は"+ number2 +"台です");
+	    	break;
+	    case "洗濯機":
+	    	System.out.println("洗濯機の残り台数は"+ number3 +"台です");
+	    	break;
+	    case "加湿器":
+	    	System.out.println("加湿器の残り台数は"+ number4 +"台です");
+	    	break;
+		case "テレビ" :
+			System.out.println("テレビの残り台数は"+ tv +"台です");
+			break;
+		case "デイスプレイ" :
+	    	System.out.println("ディスプレイの残り台数は"+ display +"台です");
+	    	break;
+		default:
+			System.out.println("『受け取った値』は指定の商品ではありません");
+	    }	
+	    scanner.close();
 	}
-	}
+}
 }
