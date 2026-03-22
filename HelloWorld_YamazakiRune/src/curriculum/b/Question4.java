@@ -103,6 +103,7 @@ public class Question4 {
 		for(int j = 0; j < array3[i].length; j++) {
 			for(int k = 0; k < array3[i][j].length; k++) {
 				System.out.println(array3[i][j][k]);
+				System.out.println();
 			}
 		}
 	}
