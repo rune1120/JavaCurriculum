@@ -15,7 +15,7 @@ public class Question2 {
 
 		//Q2
 		int age = 25;
-		if (age >= 20 || age <= 30) {
+		if (age >= 20 && age <= 30) {
 			System.out.println("適正年齢です");
 		} else {
 			System.out.println("対象外です");
@@ -48,7 +48,7 @@ public class Question2 {
 		
 		//Q5
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+		int num = Integer.parseInt(sc.nextLine());
 		if (num > 0) {
 			System.out.println("正の数です");
 		} else if (num == 0) {
@@ -59,7 +59,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q6
-		int value = sc.nextInt();
+		int value = Integer.parseInt(sc.nextLine());
 		if (value % 2 == 0) {
 			System.out.println("偶数です");
 		} else {
@@ -68,7 +68,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q7
-		int score1 = sc.nextInt();
+		int score1 = Integer.parseInt(sc.nextLine());
 		if (score1 >= 90) {
 			System.out.println("優");
 		} else if (score1 >= 70) {
@@ -88,7 +88,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q9
-		int day = sc.nextInt();
+		int day= Integer.parseInt(sc.nextLine());
 		switch (day) {
 		case 1:
 			System.out.println("月曜日");
@@ -117,7 +117,7 @@ public class Question2 {
 		System.out.println();
 		
 		//Q10
-		int month = sc.nextInt();
+		int month = Integer.parseInt(sc.nextLine());
 		switch (month) {
 		case 12: case 1: case 2:
 			System.out.println("冬");

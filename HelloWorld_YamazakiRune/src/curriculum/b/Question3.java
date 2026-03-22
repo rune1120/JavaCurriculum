@@ -76,14 +76,13 @@ public class Question3 {
 			System.out.println();
 			
 		//Q10
+		Scanner scanner = new Scanner(System.in);	
 	    while (true) {
-	    	Scanner sc = new Scanner(System.in);
-			int n = sc.nextInt();
+			int n = Integer.parseInt(scanner.nextLine());
 	    if (n == 0) {
 			System.out.println("「終了しました」");
 			break;
 	    }
-	    sc.close();
 	   }
 	    System.out.println();
 	    
@@ -97,8 +96,7 @@ public class Question3 {
 	    }
 	    
 	    //Q12
-	    Scanner scanner = new Scanner(System.in);
-	    String appliance = scanner.next();	
+	    String appliance = scanner.nextLine();	
 	    String[] parts = appliance.split("、"); //「、」区切り
 	    Random random = new Random(); //ランダム関数
 	    int number = random.nextInt(11); //11までランダムで出力
