@@ -133,7 +133,7 @@ public class Question3 {
 		default:
 			System.out.println("『受け取った値』は指定の商品ではありません");
 	    }	
-	    scanner.close();
 	}
+	    scanner.close();
 }
 }

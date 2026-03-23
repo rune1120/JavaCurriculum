@@ -93,8 +93,8 @@ public class Question4 {
 			}
 		}
 	  }
-	System.out.println("最大値" + max);
-	System.out.println("最小値" + min);
+	System.out.println("最大値" + max1);
+	System.out.println("最小値" + min1);
 	System.out.println();
 	
 	//Q10
@@ -102,10 +102,11 @@ public class Question4 {
 	for(int i = 0; i < array3.length; i++) {
 		for(int j = 0; j < array3[i].length; j++) {
 			for(int k = 0; k < array3[i][j].length; k++) {
-				System.out.println(array3[i][j][k]);
+				System.out.print(array3[i][j][k]);
 				System.out.println();
 			}
 		}
 	}
+	scanner.close();
   }
 }
