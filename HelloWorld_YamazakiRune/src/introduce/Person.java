@@ -13,10 +13,6 @@ public class Person {
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
-	}
-	
-	public Person() {
-		// TODO 自動生成されたコンストラクター・スタブ
 		count++;
 	}
 
