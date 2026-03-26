@@ -8,9 +8,6 @@ public class Main {
 		
 		person1.print();
 		System.out.println("合計"+ Person.count +"人です");
-		//System.out.println(person1.name);
-		//System.out.println(person1.age);
-		//System.out.println(person1.height);
 	}
 
 }
