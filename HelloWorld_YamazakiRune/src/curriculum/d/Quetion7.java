@@ -34,9 +34,9 @@ public class Quetion7 {
 		Scanner scanner = new Scanner(System.in);
 		String playerName = scanner.nextLine(); //プレイヤー名入力
 		Random random = new Random();
-		int playerHp = random.nextInt(100); 
-		int playerAt = random.nextInt(100);
-		int playerSp = random.nextInt(100);
+		int playerHp = random.nextInt(100)+1; 
+		int playerAt = random.nextInt(100)+1;
+		int playerSp = random.nextInt(100)+1;
 		Character player = new Character(playerName, playerHp, playerAt, playerSp);
 		Character daemon = new Character(name, hp, at, sp);
 		Character first;
@@ -67,12 +67,12 @@ public class Quetion7 {
 			first.setHp(first.getHp() - second.getAt()); //後攻の攻撃
 			System.out.println(second.getName() + "の攻撃！");
 			System.out.println(first.getName() + "のHP: " + first.getHp());
+		}
 			if (player.getHp() > 0) { //プレイヤーのHPが0になった場合
 				System.out.println("Playerの勝ち！");
 			} else { //DaemonのHPが0になった場合
 				System.out.println("Daemonの勝ち！"); 
 			}
-		}
 		try { //ファイル出力
 			FileWriter fw = new FileWriter("battle_log.txt");
 			if (player.getHp() > 0) { //出力する処理
